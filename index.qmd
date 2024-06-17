@@ -1,0 +1,29 @@
+---
+title: Quarto manuscript project template
+authors:
+  - name: Nima Hejazi
+    affiliation: Harvard Biostatistics
+    orcid: 0000-0002-7127-2789
+    email: nhejazi@hsph.harvard.edu
+    roles: writing
+    corresponding: true
+bibliography: refs.bib
+date: last-modified
+---
+
+```{r}
+#| label: global_options
+#| echo: false
+#| message: false
+renv::load(here::here())
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+```
+
+## Section
+
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

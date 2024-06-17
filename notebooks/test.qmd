@@ -1,0 +1,30 @@
+---
+title: Test notebook
+authors:
+  - name: Nima Hejazi
+    affiliation: Harvard Biostatistics
+    orcid: 0000-0002-7127-2789
+    email: nhejazi@hsph.harvard.edu
+bibliography: ../refs.bib
+---
+
+```{r}
+#| label: global_options
+#| echo: false
+#| message: false
+renv::load(here::here())
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+```
+
+## Section 1
+
+...
+
+## Section 2
+
+...
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

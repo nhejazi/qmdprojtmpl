@@ -1,0 +1,27 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    toc: true
+    comments:
+      hypothesis: true
+    reference-location: margin
+    citation-location: margin
+    highlight-style: ayu-mirage
+    include-in-header:
+      - file: headers/mathjax.html
+  pdf:
+    include-in-header:
+      - file: headers/preamble.tex
+  docx: default
+  jats: default
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
