@@ -7,16 +7,19 @@ manuscript:
 format:
   html:
     toc: true
+    toc-location: left
     comments:
       hypothesis: true
     reference-location: margin
     citation-location: margin
+    citations-hover: true
+    crossrefs-hover: true
     highlight-style: ayu-mirage
     include-in-header:
-      - file: headers/mathjax.html
+      - file: _headers/mathjax.html
   pdf:
     include-in-header:
-      - file: headers/preamble.tex
+      - file: _headers/preamble.tex
   docx: default
   jats: default
 

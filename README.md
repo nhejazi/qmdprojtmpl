@@ -8,7 +8,11 @@ source code. A lightweight virtual environment is already included via the
 [`renv` package](https://rstudio.github.io/renv/articles/renv.html). The
 organizational structure is as follows
 
-* `data/` contains raw data for an analysis
-* `notebooks/` contains literate computing notebooks implementing analyses or
-  tools for analyses
-* `simulations/` contains source code for (statistical) simulation experiments
+* `data/`: raw data for data analysis or simulation experiments
+* `notebooks/`: literate computing notebooks (as `.qmd`) implementing analyses;
+   these [play a specific role](https://quarto.org/docs/manuscripts/#notebooks)
+   in the Quarto manuscript format
+* `sandbox/`: auxiliary and/or miscellaneous source code produced over the
+  course of project development
+* `simulations/`: source code for statistical/computational simulation
+  experiments
