@@ -15,13 +15,17 @@ date: last-modified
 #| label: global_options
 #| echo: false
 #| message: false
-renv::load(here::here())
+renv::autoload()
 knitr::opts_chunk$set(warning=FALSE, message=FALSE)
 ```
 
 ## Section
 
 This is a simple placeholder for the manuscript's main document [@knuth84].
+
+```{r}
+library(collapse)
+```
 
 ## References {.unnumbered}
 
