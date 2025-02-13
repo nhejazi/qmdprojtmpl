@@ -6,22 +6,57 @@ manuscript:
 
 format:
   html:
-    toc: true
-    toc-location: left
+    number-sections: true
+    # optional comments
     comments:
-      hypothesis: true
+      hypothesis: false
+    # TeX-related options
+    include-in-header:
+      - file: headers/mathjax.html
+    # ToC options
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    # figure options
+    fig-width: 8
+    fig-asp: 0.618
+    # code block options
+    code-link: true
+    code-fold: true
+    code-tools: true
+    code-line-numbers: true
+    code-block-bg: white
+    highlight-style: gruvbox
+    # citation/footnotes placement
     reference-location: margin
-    citation-location: margin
-    citations-hover: true
-    crossrefs-hover: true
-    highlight-style: ayu-mirage
-    include-in-header:
-      - file: _headers/mathjax.html
+    citation-location: document
   pdf:
+    papersize: letter
+    fontsize: 11pt
+    geometry:
+      - margin=1in
+      - heightrounded
+    number-sections: true
+    colorlinks: true
+    link-citations: true
+    callout-appearance: simple
+    callout-icon: false
+    # TeX-related options
+    pdf-engine: lualatex
     include-in-header:
-      - file: _headers/preamble.tex
-  docx: default
-  jats: default
+      - file: headers/preamble.tex
+    # ToC options
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    # figure options
+    fig-width: 8
+    fig-asp: 0.618
+    fig-cap-location: bottom
+    # code block options
+    code-line-numbers: false
+    code-block-bg: white
+    highlight-style: printing
 
 execute:
   freeze: auto
